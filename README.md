@@ -8,6 +8,8 @@ We've also shortened the tutorial.  If you'd like to see the original tutorial, 
 
 When you are finished, please publish to github pages, and post a link to your github pages HERE:
 
+https://neu-ds-4200-s20.github.io/in-class-programming-geo-harimuralikrishnan/
+
 Then, submit a link to your repository on Canvas under the in-class assignment page.
 
 ## Let's get started!
@@ -110,7 +112,7 @@ var projection = d3.geoAlbersUsa(); // (2)
 var path = d3.geoPath()
     .projection(projection);  // (3)
 
-d3.json("data/1790.json", function(error, topologies) {  // (4)
+d3.json("data/states.json", function(error, topologies) {  // (4)
 
   var state = topojson.feature(topologies[0], topologies[0].objects.stdin);  // (5)
 
